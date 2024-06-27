@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React_Application1</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+    let rootElement = document.getElementById("root");
+        const element = React.createElement("p",{
+            className: "quote",
+            children: "Seize the day",
+        });
+        const reactRoot = ReactDOM.createRoot(rootElement);
+        reactRoot.render(element);
+
+
+
+        // let element = ( <div>
+        //     <h1>List of Items</h1>
+        //         <ol>
+        //             <li>Mango</li>
+        //             <li>Apple</li>
+        //             <li>Banana</li>
+        //         </ol>
+        //         <img src="https://via.placeholder.com/150" />
+        //     </div>
+        //     );
+
+        //     const reactRoot = ReactDOM.createRoot(rootElement);
+        //     reactRoot.render(element);
+//    let header = <h1>Hello Jsx</h1>
+//         const reactRoot = ReactDOM.createRoot(rootElement);
+//         reactRoot.render(header);
+    </script>
+
+</html>
